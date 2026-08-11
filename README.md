@@ -74,12 +74,22 @@ hint is that one of the cases is a validated, high-quality experiment.
 
 Use [`worksheet_template.md`](worksheet_template.md) to record your group's answers for both Part 1 and Part 2.
 
+#### Part 2: Assumptions
+
+- The data is derived from a real mRNAseq experiment with poly A selected, 100bp paired end reads
+- The problems represent common issues that arise in sequencing experiments due to experiment protocol, library preparation, etc.
+- The problems may be a feature of the underlying reads or an issue with any of the initial workflow (the sequencing reads, generation of the genome index, alignment to the reference genome)
+- One case represents an experiment with high-quality reads and successful alignment to the reference genome
+
+
 ## AI Use Disclosure (Course Materials)
 
 This README was developed with AI assistance from Claude Sonnet 5, used to edit existing text for clarity and organization and to suggest the draft learning objectives above. The accompanying [`worksheet_template.md`](worksheet_template.md) was fully AI-generated: it is a fixed fill-in-the-blank template (headings, prompts, and blank fields) mechanically derived from this README's own Task section and each objective's inline Criteria, not original narrative or graded content.
 
-All experimental cases, analysis code, and the original lab text were authored manually by the instructor. AI was not used to generate any case data, code, or original narrative content — its role was limited to editorial revision of existing text, suggesting candidate learning objectives (critically reviewed, edited, and validated by the instructor before inclusion), and generating the structural worksheet template described above.
+The analysis code used to produce this lab's case data was generated with Claude using a behavior-driven design (BDD) workflow — behavior/test specifications were written first, then Claude generated implementation code to satisfy them — and was manually reviewed and tested by the instructor before use.
 
-**Boundary:** AI was not used to generate case data, analysis code, or grading criteria, and is not used to evaluate or grade student submissions for this lab.
+All experimental case data and the original lab narrative text were authored manually by the instructor. AI was used to generate analysis code (via the BDD workflow above) and the structural worksheet template; it was not used to generate case data or original narrative content. AI's other role was limited to editorial revision of existing text and suggesting candidate learning objectives, both critically reviewed, edited, and validated by the instructor before inclusion.
+
+**Boundary:** AI was not used to generate case data or grading criteria, and is not used to evaluate or grade student submissions for this lab. All AI-generated code was manually reviewed and tested by the instructor before use.
 
 The instructor reviewed, edited, and takes full responsibility for all content in this document.
