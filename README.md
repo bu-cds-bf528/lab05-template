@@ -1,5 +1,7 @@
 # Lab 5 - Sequencing Quality Control
 
+**Estimated time:** ~90 minutes total (Part 1: ~30 minutes discussion; Part 2: remaining time for case analysis)
+
 ## Learning Objectives
 
 ### Objective 1: Interpret sequencing QC metrics
@@ -36,7 +38,7 @@
 
 ## Task
 
-### Part 1: Discussion
+### Part 1: Discussion (~30 minutes)
 
 Please make small groups of 3-4 with your peers around you and discuss the following question:
 
@@ -51,7 +53,7 @@ Assume you were given 2x100nt paired-end Illumina sequencing from an mRNA-seq ex
 7. Nucleotide frequencies of A, C, G, T are not equal over the entire read
 8. Unequal number of forward and reverse reads
 
-### Part 2: Evaluate five distinct experimental cases
+### Part 2: Evaluate five distinct experimental cases (remaining time)
 
 In real sequencing experiments, artifacts or issues often arise from experimental protocols or methodological choices.
 Before you can be confident in the biological analysis, it is critical to carefully evaluate the quality of your sequencing experiment. This is
@@ -65,6 +67,13 @@ statistics on read distribution from RSeQC for five different experiments (Case 
 (`case_A/` through `case_E/`), containing `fastqc/`, `star/`, and `rseqc/` subdirectories with the raw tool output, plus a combined `multiqc_report.html`
 summarizing all three.
 
+**Assumptions:**
+
+- The data is derived from a real mRNA-seq experiment with poly-A selected, 100bp paired-end reads.
+- The problems represent common issues that arise in sequencing experiments due to experimental protocol, library preparation, etc.
+- A problem may be a feature of the underlying reads or an issue introduced anywhere in the initial workflow (the sequencing reads themselves, generation of the genome index, or alignment to the reference genome).
+- One case represents an experiment with high-quality reads and successful alignment to the reference genome.
+
 In your same groups, for each case, please comment on the output of each report by specifically citing at least 2-3 statistics / metrics, and a short
 paragraph explaining what this means about the success of the underlying experiment. Then, make a recommendation about what you believe is
 right or wrong with the experiment, and whether you will proceed with further analysis and why. If you believe something is wrong with a case,
@@ -73,14 +82,6 @@ explanation) and suggest a follow-up step (an additional check, re-analysis, or 
 hint is that one of the cases is a validated, high-quality experiment.
 
 Use [`worksheet_template.md`](worksheet_template.md) to record your group's answers for both Part 1 and Part 2.
-
-#### Part 2: Assumptions
-
-- The data is derived from a real mRNAseq experiment with poly A selected, 100bp paired end reads
-- The problems represent common issues that arise in sequencing experiments due to experiment protocol, library preparation, etc.
-- The problems may be a feature of the underlying reads or an issue with any of the initial workflow (the sequencing reads, generation of the genome index, alignment to the reference genome)
-- One case represents an experiment with high-quality reads and successful alignment to the reference genome
-
 
 ## AI Use Disclosure (Course Materials)
 
