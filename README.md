@@ -3,9 +3,9 @@
 **Estimated time:** ~90 minutes total (Part 1: ~30 minutes discussion; Part 2:
 remaining time for case analysis)
 
-## Part 1: Discussion (~30 minutes)
+## Part 1
 
-### Part 1 Instructions
+### Instructions
 
 Please make small groups of 3-4 with your peers around you and discuss the
 following question:
@@ -22,7 +22,12 @@ experiment, rank the following from most concerning to least concerning:
 7. Nucleotide frequencies of A, C, G, T are not equal over the entire read
 8. Unequal number of forward and reverse reads
 
-### Objective: Interpret sequencing QC metrics by their impact on downstream analysis
+Use [`worksheet_template.md`](worksheet_template.md) to record your group's
+answers for both Part 1 and Part 2.
+
+### Learning Objectives
+
+#### Interpret sequencing QC metrics by their impact on downstream analysis
 
 **Purpose — Why this matters:** Understanding what per-base quality scores,
 duplication levels, per-base sequence content, and alignment statistics
@@ -40,9 +45,9 @@ into the context of the protocol that generated them. You understand which are
 fundamental errors in the generation of the data vs. real artifacts inherent
 to the methodology.
 
-## Part 2: Evaluate five distinct experimental cases (remaining time)
+## Part 2
 
-### Part 2 Instructions
+### Instructions
 
 In real sequencing experiments, artifacts or issues often arise from
 experimental protocols or methodological choices. Before you can be confident
@@ -107,7 +112,9 @@ validated, high-quality experiment.
 Use [`worksheet_template.md`](worksheet_template.md) to record your group's
 answers for both Part 1 and Part 2.
 
-### Objective: Apply knowledge of expected technical artifacts
+### Learning Objectives
+
+#### Apply knowledge of expected technical artifacts
 
 **Purpose — Why this matters:** Many "abnormal-looking" QC signals are
 well-documented, expected artifacts of standard mRNA-seq library prep rather
@@ -125,7 +132,7 @@ metrics are expected artifacts and which are genuine causes for concern.
 specific technical reason (e.g., citing library-prep chemistry or aspects of
 the biology that might explain what you observe).
 
-### Objective: Analyze and evaluate a full QC report
+#### Analyze and evaluate a full QC report
 
 **Purpose — Why this matters:** Real sequencing QC reports rarely have one
 metric that tells the whole story and there are expected biases due to the
@@ -142,7 +149,7 @@ experiment's success.
 draws a conclusion that follows from the *combination* of cited statistics
 and steps, not from any single metric in isolation.
 
-### Objective: Justify a decision to proceed or not proceed with the analysis
+#### Justify a decision to proceed or not proceed with the analysis
 
 **Purpose — Why this matters:** Deciding whether to trust a dataset enough to
 commit further analysis time to it is a routine judgment call for any
