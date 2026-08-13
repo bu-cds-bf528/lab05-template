@@ -5,7 +5,24 @@ remaining time for case analysis)
 
 ## Part 1: Discussion (~30 minutes)
 
-### Objective 1: Interpret sequencing QC metrics by their impact on downstream analysis
+### Part 1 Instructions
+
+Please make small groups of 3-4 with your peers around you and discuss the
+following question:
+
+Assume you were given 2x100nt paired-end Illumina sequencing from an mRNA-seq
+experiment, rank the following from most concerning to least concerning:
+
+1. Unequal read lengths
+2. Average PHRED score <20 in the last 10 bases
+3. 15% of reads have identical sequence
+4. 50% of reads are multimapped after alignment to the reference
+5. 10% of reads are unmapped after alignment to the reference
+6. Non-random nucleotide distribution in the first 6 bases
+7. Nucleotide frequencies of A, C, G, T are not equal over the entire read
+8. Unequal number of forward and reverse reads
+
+### Objective: Interpret sequencing QC metrics by their impact on downstream analysis
 
 **Purpose — Why this matters:** Understanding what per-base quality scores,
 duplication levels, per-base sequence content, and alignment statistics
@@ -23,80 +40,9 @@ into the context of the protocol that generated them. You understand which are
 fundamental errors in the generation of the data vs. real artifacts inherent
 to the methodology.
 
-### Part 1: Task
-
-Please make small groups of 3-4 with your peers around you and discuss the
-following question:
-
-Assume you were given 2x100nt paired-end Illumina sequencing from an mRNA-seq
-experiment, rank the following from most concerning to least concerning:
-
-1. Unequal read lengths
-2. Average PHRED score <20 in the last 10 bases
-3. 15% of reads have identical sequence
-4. 50% of reads are multimapped after alignment to the reference
-5. 10% of reads are unmapped after alignment to the reference
-6. Non-random nucleotide distribution in the first 6 bases
-7. Nucleotide frequencies of A, C, G, T are not equal over the entire read
-8. Unequal number of forward and reverse reads
-
 ## Part 2: Evaluate five distinct experimental cases (remaining time)
 
-### Objective 1: Apply knowledge of expected technical artifacts
-
-**Purpose — Why this matters:** Many "abnormal-looking" QC signals are
-well-documented, expected artifacts of standard mRNA-seq library prep rather
-than genuine problems. Many FastQC modules will show a "fail" for successful
-experiments. Common sequencing issues also have distinct signatures that show
-up in these statistics. Telling the two apart avoids wasting effort
-re-sequencing data that's actually fine, or wasting effort analyzing data that
-cannot be rescued.
-
-**Task — What you will do:** You will decide, case by case, which flagged
-metrics are expected artifacts and which are genuine causes for concern.
-
-**Criteria — How you'll know you're succeeding:** Your Part 1 ranking and Part
-2 case write-ups justify each artifact-vs-concern classification with a
-specific technical reason (e.g., citing library-prep chemistry or aspects of
-the biology that might explain what you observe).
-
-### Objective 2: Analyze and evaluate a full QC report
-
-**Purpose — Why this matters:** Real sequencing QC reports rarely have one
-metric that tells the whole story and there are expected biases due to the
-underlying sequencing methodology. Drawing a sound overall conclusion requires
-weighing several statistics together as well as considering all of the
-different steps in most workflows (sequencing quality control, alignment
-rates, etc.).
-
-**Task — What you will do:** For each of the five cases, you will
-synthesize at least 2-3 cited statistics into a short paragraph judging the
-experiment's success.
-
-**Criteria — How you'll know you're succeeding:** Your paragraph for each case
-draws a conclusion that follows from the *combination* of cited statistics
-and steps, not from any single metric in isolation.
-
-### Objective 3: Justify a decision to proceed or not proceed with the analysis
-
-**Purpose — Why this matters:** Deciding whether to trust a dataset enough to
-commit further analysis time to it is a routine judgment call for any
-bioinformatics analyst and one that must be defensible and remain the
-responsibility of the individual scientist.
-
-**Task — What you will do:** For each case, you will state whether
-you would proceed with further analysis and why. Across all five cases, you
-will use the provided hint to identify the one validated, high-quality
-experiment and speculate on the main issue present in the other cases.
-
-**Criteria — How you'll know you're succeeding:** Each recommendation is
-unambiguous (proceed / do not proceed) and traceable to the specific
-statistics you cited earlier in that case's write-up. You can suggest at
-least one follow-up analysis or experiment that would potentially confirm
-your hypothesis as to the cause of the underlying issues seen in the other
-cases.
-
-### Part 2: Task
+### Part 2 Instructions
 
 In real sequencing experiments, artifacts or issues often arise from
 experimental protocols or methodological choices. Before you can be confident
@@ -116,6 +62,23 @@ statistics on read distribution from RSeQC for five different experiments
 (`case_A/` through `case_E/`), containing `fastqc/`, `star/`, and `rseqc/`
 subdirectories with the raw tool output, plus a combined `multiqc_report.html`
 summarizing all three.
+
+**Guiding Questions:**
+
+- For poly-A selected mRNA-seq, what pattern would you expect in the first
+  several bases of each read and would that pattern actually make a FastQC
+  module fail?
+- What alignment rate would you consider normal for a well-prepped mRNA-seq
+  library against the correct reference, and what would make that rate drop
+  sharply?
+- For poly-A mRNA-seq, which genomic regions (CDS exons, UTRs, introns,
+  intergenic) do you expect most reads to fall into, and why?
+- In general, all of these cases are known potential situations where issues
+  occurred either during sample preparation in the lab, quality control of the
+  reads, or alignment to the reference.
+- Once you have guessed at what you think was the high-quality sample aligned
+  to the appropriate reference, compare its specific statistics and metrics
+  to the other samples
 
 **Assumptions:**
 
@@ -143,6 +106,60 @@ validated, high-quality experiment.
 
 Use [`worksheet_template.md`](worksheet_template.md) to record your group's
 answers for both Part 1 and Part 2.
+
+### Objective: Apply knowledge of expected technical artifacts
+
+**Purpose — Why this matters:** Many "abnormal-looking" QC signals are
+well-documented, expected artifacts of standard mRNA-seq library prep rather
+than genuine problems. Many FastQC modules will show a "fail" for successful
+experiments. Common sequencing issues also have distinct signatures that show
+up in these statistics. Telling the two apart avoids wasting effort
+re-sequencing data that's actually fine, or wasting effort analyzing data that
+cannot be rescued.
+
+**Task — What you will do:** You will decide, case by case, which flagged
+metrics are expected artifacts and which are genuine causes for concern.
+
+**Criteria — How you'll know you're succeeding:** Your Part 1 ranking and Part
+2 case write-ups justify each artifact-vs-concern classification with a
+specific technical reason (e.g., citing library-prep chemistry or aspects of
+the biology that might explain what you observe).
+
+### Objective: Analyze and evaluate a full QC report
+
+**Purpose — Why this matters:** Real sequencing QC reports rarely have one
+metric that tells the whole story and there are expected biases due to the
+underlying sequencing methodology. Drawing a sound overall conclusion requires
+weighing several statistics together as well as considering all of the
+different steps in most workflows (sequencing quality control, alignment
+rates, etc.).
+
+**Task — What you will do:** For each of the five cases, you will
+synthesize at least 2-3 cited statistics into a short paragraph judging the
+experiment's success.
+
+**Criteria — How you'll know you're succeeding:** Your paragraph for each case
+draws a conclusion that follows from the *combination* of cited statistics
+and steps, not from any single metric in isolation.
+
+### Objective: Justify a decision to proceed or not proceed with the analysis
+
+**Purpose — Why this matters:** Deciding whether to trust a dataset enough to
+commit further analysis time to it is a routine judgment call for any
+bioinformatics analyst and one that must be defensible and remain the
+responsibility of the individual scientist.
+
+**Task — What you will do:** For each case, you will state whether
+you would proceed with further analysis and why. Across all five cases, you
+will use the provided hint to identify the one validated, high-quality
+experiment and speculate on the main issue present in the other cases.
+
+**Criteria — How you'll know you're succeeding:** Each recommendation is
+unambiguous (proceed / do not proceed) and traceable to the specific
+statistics you cited earlier in that case's write-up. You can suggest at
+least one follow-up analysis or experiment that would potentially confirm
+your hypothesis as to the cause of the underlying issues seen in the other
+cases.
 
 ## AI Use Disclosure (Course Materials)
 
