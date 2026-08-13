@@ -70,20 +70,34 @@ summarizing all three.
 
 **Guiding Questions:**
 
+#### FastQC
+
 - For poly-A selected mRNA-seq, what pattern would you expect in the first
-  several bases of each read and would that pattern actually make a FastQC
+  several bases of each read, and would that pattern actually make a
   module fail?
-- What alignment rate would you consider normal for a well-prepped mRNA-seq
-  library against the correct reference, and what would make that rate drop
-  sharply?
+
+#### STAR
+
+- What alignment rate would you consider normal for a well-prepped
+  mRNA-seq library against the correct reference, and what would make
+  that rate drop sharply?
+- Look at the uniquely mapped, multi-mapped, and unmapped percentages
+  together. How might these categories connect back to what you saw in
+  FastQC (e.g., duplication levels, overrepresented sequences)?
+
+#### RSeQC
+
 - For poly-A mRNA-seq, which genomic regions (CDS exons, UTRs, introns,
   intergenic) do you expect most reads to fall into, and why?
-- In general, all of these cases are known potential situations where issues
-  occurred either during sample preparation in the lab, quality control of the
-  reads, or alignment to the reference.
-- Once you have guessed at what you think was the high-quality sample aligned
-  to the appropriate reference, compare its specific statistics and metrics
-  to the other samples
+
+#### Putting It Together
+
+- In general, all of these cases are known potential situations where
+  issues occurred either during sample preparation in the lab, quality
+  control of the reads, or alignment to the reference.
+- Once you have guessed at what you think was the high-quality sample
+  aligned to the appropriate reference, compare its specific statistics
+  and metrics to the other samples.
 
 **Assumptions:**
 
