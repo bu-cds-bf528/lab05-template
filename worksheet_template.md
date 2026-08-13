@@ -26,7 +26,7 @@ Rank the 8 items below from **most concerning (1)** to **least concerning (8)** 
 
 ---
 
-## Part 2: Evaluate Five Distinct Experimental Cases
+## Part 2: Evaluate Six Distinct Experimental Cases
 
 For each case, cite **at least 2-3 specific statistics/metrics** (name the metric and its value), write a short paragraph interpreting what they mean about the experiment, and state a clear recommendation. If you believe something is wrong with a case, speculate on the specific root cause and suggest a follow-up that would confirm it.
 
@@ -180,11 +180,41 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 ---
 
+
+### Case F
+
+**Statistics cited:**
+
+1.
+2.
+3.
+
+**Interpretation:**
+
+
+
+
+**Recommendation** (proceed / do not proceed with further analysis) **and why:**
+
+
+
+
+**Suspected root cause** (if something is wrong with this case, what specific library-prep, sequencing, or biological explanation do you think is causing it?):
+
+
+
+
+**Suggested follow-up to confirm the root cause** (what additional check, re-analysis, or wet-lab step would confirm that specific hypothesis?):
+
+
+
+---
+
 ## Summary
 
 **Which case do you believe is the validated, high-quality experiment?** ___________
 
-**Why, compared to the other four cases?**
+**Why, compared to the other five cases?**
 
 
 

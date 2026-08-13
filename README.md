@@ -62,11 +62,14 @@ expected and can be mitigated or ignored for most downstream purposes.
 
 For the following activity, you have been provided the sequencing quality
 control results from FastQC, the alignment rate statistics from STAR, and
-statistics on read distribution from RSeQC for five different experiments
-(Case A, Case B, Case C, Case D, Case E). Each case has its own directory
-(`case_A/` through `case_E/`), containing `fastqc/`, `star/`, and `rseqc/`
+statistics on read distribution from RSeQC for six different experiments
+(Case A, Case B, Case C, Case D, Case E, Case F). Each case has its own directory
+(`case_A/` through `case_F/`), containing `fastqc/`, `star/`, and `rseqc/`
 subdirectories with the raw tool output, plus a combined `multiqc_report.html`
 summarizing all three.
+
+The `all_multiqc_report.html' summarizes and compares the same modules and
+stats across all the cases. 
 
 **Guiding Questions:**
 
@@ -123,9 +126,6 @@ follow-up step (an additional check, re-analysis, or wet-lab test) that would
 confirm that hypothesis. Your singular hint is that one of the cases is a
 validated, high-quality experiment.
 
-The `all_multiqc_report.html' summarizes and compares the same modules and
-stats across all the cases. 
-
 Use [`worksheet_template.md`](worksheet_template.md) to record your group's
 answers for both Part 1 and Part 2.
 
@@ -158,7 +158,7 @@ answers for both Part 1 and Part 2.
 > of the different steps in most workflows (sequencing quality control,
 > alignment rates, etc.).
 >
-> **Task — What you will do:** For each of the five cases, you will
+> **Task — What you will do:** For each of the six cases, you will
 > synthesize at least 2-3 cited statistics into a short paragraph judging
 > the experiment's success.
 >
@@ -174,7 +174,7 @@ answers for both Part 1 and Part 2.
 > responsibility of the individual scientist.
 >
 > **Task — What you will do:** For each case, you will state whether you
-> would proceed with further analysis and why. Across all five cases, you
+> would proceed with further analysis and why. Across all six cases, you
 > will use the provided hint to identify the one validated, high-quality
 > experiment and speculate on the main issue present in the other cases.
 >
