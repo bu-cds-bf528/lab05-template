@@ -29,21 +29,21 @@ answers for both Part 1 and Part 2.
 
 #### Interpret sequencing QC metrics by their impact on downstream analysis
 
-**Purpose — Why this matters:** Understanding what per-base quality scores,
-duplication levels, per-base sequence content, and alignment statistics
-actually measure is foundational to reading any FastQC/STAR/RSeQC report
-correctly. Understanding which metrics can be mitigated, which represent
-known artifacts, and which represent experimental issues is critical for
-judging whether to proceed with an analysis or not.
-
-**Task — What you will do:** Rank a list of common sequencing artifacts or
-metrics by most to least concerning. Reason about the severity of these
-artifacts and which, if any, downstream steps correct or mitigate for them.
-
-**Criteria — How you'll know you're succeeding:** You can place these metrics
-into the context of the protocol that generated them. You understand which are
-fundamental errors in the generation of the data vs. real artifacts inherent
-to the methodology.
+> **Purpose — Why this matters:** Understanding what per-base quality scores,
+> duplication levels, per-base sequence content, and alignment statistics
+> actually measure is foundational to reading any FastQC/STAR/RSeQC report
+> correctly. Understanding which metrics can be mitigated, which represent
+> known artifacts, and which represent experimental issues is critical for
+> judging whether to proceed with an analysis or not.
+>
+> **Task — What you will do:** Rank a list of common sequencing artifacts or
+> metrics by most to least concerning. Reason about the severity of these
+> artifacts and which, if any, downstream steps correct or mitigate for them.
+>
+> **Criteria — How you'll know you're succeeding:** You can place these
+> metrics into the context of the protocol that generated them. You
+> understand which are fundamental errors in the generation of the data vs.
+> real artifacts inherent to the methodology.
 
 ## Part 2
 
@@ -116,57 +116,57 @@ answers for both Part 1 and Part 2.
 
 #### Apply knowledge of expected technical artifacts
 
-**Purpose — Why this matters:** Many "abnormal-looking" QC signals are
-well-documented, expected artifacts of standard mRNA-seq library prep rather
-than genuine problems. Many FastQC modules will show a "fail" for successful
-experiments. Common sequencing issues also have distinct signatures that show
-up in these statistics. Telling the two apart avoids wasting effort
-re-sequencing data that's actually fine, or wasting effort analyzing data that
-cannot be rescued.
-
-**Task — What you will do:** You will decide, case by case, which flagged
-metrics are expected artifacts and which are genuine causes for concern.
-
-**Criteria — How you'll know you're succeeding:** Your Part 1 ranking and Part
-2 case write-ups justify each artifact-vs-concern classification with a
-specific technical reason (e.g., citing library-prep chemistry or aspects of
-the biology that might explain what you observe).
+> **Purpose — Why this matters:** Many "abnormal-looking" QC signals are
+> well-documented, expected artifacts of standard mRNA-seq library prep
+> rather than genuine problems. Many FastQC modules will show a "fail" for
+> successful experiments. Common sequencing issues also have distinct
+> signatures that show up in these statistics. Telling the two apart avoids
+> wasting effort re-sequencing data that's actually fine, or wasting effort
+> analyzing data that cannot be rescued.
+>
+> **Task — What you will do:** You will decide, case by case, which flagged
+> metrics are expected artifacts and which are genuine causes for concern.
+>
+> **Criteria — How you'll know you're succeeding:** Your Part 1 ranking and
+> Part 2 case write-ups justify each artifact-vs-concern classification with
+> a specific technical reason (e.g., citing library-prep chemistry or
+> aspects of the biology that might explain what you observe).
 
 #### Analyze and evaluate a full QC report
 
-**Purpose — Why this matters:** Real sequencing QC reports rarely have one
-metric that tells the whole story and there are expected biases due to the
-underlying sequencing methodology. Drawing a sound overall conclusion requires
-weighing several statistics together as well as considering all of the
-different steps in most workflows (sequencing quality control, alignment
-rates, etc.).
-
-**Task — What you will do:** For each of the five cases, you will
-synthesize at least 2-3 cited statistics into a short paragraph judging the
-experiment's success.
-
-**Criteria — How you'll know you're succeeding:** Your paragraph for each case
-draws a conclusion that follows from the *combination* of cited statistics
-and steps, not from any single metric in isolation.
+> **Purpose — Why this matters:** Real sequencing QC reports rarely have one
+> metric that tells the whole story and there are expected biases due to the
+> underlying sequencing methodology. Drawing a sound overall conclusion
+> requires weighing several statistics together as well as considering all
+> of the different steps in most workflows (sequencing quality control,
+> alignment rates, etc.).
+>
+> **Task — What you will do:** For each of the five cases, you will
+> synthesize at least 2-3 cited statistics into a short paragraph judging
+> the experiment's success.
+>
+> **Criteria — How you'll know you're succeeding:** Your paragraph for each
+> case draws a conclusion that follows from the *combination* of cited
+> statistics and steps, not from any single metric in isolation.
 
 #### Justify a decision to proceed or not proceed with the analysis
 
-**Purpose — Why this matters:** Deciding whether to trust a dataset enough to
-commit further analysis time to it is a routine judgment call for any
-bioinformatics analyst and one that must be defensible and remain the
-responsibility of the individual scientist.
-
-**Task — What you will do:** For each case, you will state whether
-you would proceed with further analysis and why. Across all five cases, you
-will use the provided hint to identify the one validated, high-quality
-experiment and speculate on the main issue present in the other cases.
-
-**Criteria — How you'll know you're succeeding:** Each recommendation is
-unambiguous (proceed / do not proceed) and traceable to the specific
-statistics you cited earlier in that case's write-up. You can suggest at
-least one follow-up analysis or experiment that would potentially confirm
-your hypothesis as to the cause of the underlying issues seen in the other
-cases.
+> **Purpose — Why this matters:** Deciding whether to trust a dataset enough
+> to commit further analysis time to it is a routine judgment call for any
+> bioinformatics analyst and one that must be defensible and remain the
+> responsibility of the individual scientist.
+>
+> **Task — What you will do:** For each case, you will state whether you
+> would proceed with further analysis and why. Across all five cases, you
+> will use the provided hint to identify the one validated, high-quality
+> experiment and speculate on the main issue present in the other cases.
+>
+> **Criteria — How you'll know you're succeeding:** Each recommendation is
+> unambiguous (proceed / do not proceed) and traceable to the specific
+> statistics you cited earlier in that case's write-up. You can suggest at
+> least one follow-up analysis or experiment that would potentially confirm
+> your hypothesis as to the cause of the underlying issues seen in the
+> other cases.
 
 ## AI Use Disclosure (Course Materials)
 
