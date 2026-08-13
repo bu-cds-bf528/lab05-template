@@ -3,7 +3,7 @@
 **Estimated time:** ~90 minutes total (Part 1: ~30 minutes discussion; Part 2:
 remaining time for case analysis)
 
-## Part 1
+## Part 1 (AIAS Level 1 - No AI)
 
 ### Instructions
 
@@ -45,7 +45,7 @@ answers for both Part 1 and Part 2.
 > understand which are fundamental errors in the generation of the data vs.
 > real artifacts inherent to the methodology.
 
-## Part 2
+## Part 2 (AIAS Level 1 - No AI)
 
 ### Instructions
 
@@ -167,6 +167,17 @@ answers for both Part 1 and Part 2.
 > least one follow-up analysis or experiment that would potentially confirm
 > your hypothesis as to the cause of the underlying issues seen in the
 > other cases.
+
+## AI Use Policy
+
+AI Level 1 (No AI) was chosen for this lab because these judgments remain
+the domain of the individual. As a scientist, you are ultimately
+responsible for ensuring your results are sound before submitting them for
+publication. If you publish data based on wrong conclusions made by an
+LLM, the ultimate responsibility is still yours. This lab is meant to help
+you exercise and develop your skills in evaluating sequencing quality
+control data, and to give you confidence in justifying your decisions
+based on your evaluation of multiple metrics.
 
 ## AI Use Disclosure (Course Materials)
 
