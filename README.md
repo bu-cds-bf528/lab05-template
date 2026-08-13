@@ -3,83 +3,27 @@
 **Estimated time:** ~90 minutes total (Part 1: ~30 minutes discussion; Part 2:
 remaining time for case analysis)
 
-## Learning Objectives
+## Part 1: Discussion (~30 minutes)
 
-### Objective 1: Interpret sequencing QC metrics
+### Objective 1: Interpret sequencing QC metrics by their impact on downstream analysis
 
 **Purpose — Why this matters:** Understanding what per-base quality scores,
 duplication levels, per-base sequence content, and alignment statistics
 actually measure is foundational to reading any FastQC/STAR/RSeQC report
-correctly.
+correctly. Understanding which metrics can be mitigated, which represent
+known artifacts, and which represent experimental issues is critical for
+judging whether to proceed with an analysis or not.
 
-**Task — What you will do:** In Part 2, you will read the FastQC, STAR, and
-RSeQC output provided for five cases and identify and evaluate the metrics
-for each.
+**Task — What you will do:** Rank a list of common sequencing artifacts or
+metrics by most to least concerning. Reason about the severity of these
+artifacts and which, if any, downstream steps correct or mitigate for them.
 
-**Criteria — How you'll know you're succeeding:** You can name and correctly
-define at least 2-3 metrics per case, in your own words, without needing to
-look up what they measure. You can place them into the appropriate context of
-what patterns or biases you might already expect, which represent a genuine
-issue, and which can be mitigated.
+**Criteria — How you'll know you're succeeding:** You can place these metrics
+into the context of the protocol that generated them. You understand which are
+fundamental errors in the generation of the data vs. real artifacts inherent
+to the methodology.
 
-### Objective 2: Apply knowledge of expected technical artifacts
-
-**Purpose — Why this matters:** Many "abnormal-looking" QC signals are
-well-documented, expected artifacts of standard mRNA-seq library prep rather
-than genuine problems. Many FastQC modules will show a "fail" for successful
-experiments. Common sequencing issues also have distinct signatures that show
-up in these statistics. Telling the two apart avoids wasting effort
-re-sequencing data that's actually fine, or wasting effort analyzing data that
-cannot be rescued.
-
-**Task — What you will do:** In Part 1, you will rank a list of QC concerns by
-severity as a group; in Part 2, you will decide, case by case, which flagged
-metrics are expected artifacts and which are genuine causes for concern.
-
-**Criteria — How you'll know you're succeeding:** Your Part 1 ranking and Part
-2 case write-ups justify each artifact-vs-concern classification with a
-specific technical reason (e.g., citing library-prep chemistry or aspects of
-the biology that might explain what you observe).
-
-### Objective 3: Analyze and evaluate a full QC report
-
-**Purpose — Why this matters:** Real sequencing QC reports rarely have one
-metric that tells the whole story and there are expected biases due to the
-underlying sequencing methodology. Drawing a sound overall conclusion requires
-weighing several statistics together as well as considering all of the
-different steps in most workflows (sequencing quality control, alignment
-rates, etc.).
-
-**Task — What you will do:** In Part 2, for each of the five cases, you will
-synthesize at least 2-3 cited statistics into a short paragraph judging the
-experiment's success.
-
-**Criteria — How you'll know you're succeeding:** Your paragraph for each case
-draws a conclusion that follows from the *combination* of cited statistics
-and steps, not from any single metric in isolation.
-
-### Objective 4: Justify a decision to proceed or not proceed with the analysis
-
-**Purpose — Why this matters:** Deciding whether to trust a dataset enough to
-commit further analysis time to it is a routine judgment call for any
-bioinformatics analyst and one that must be defensible and remain the
-responsibility of the individual scientist.
-
-**Task — What you will do:** In Part 2, for each case, you will state whether
-you would proceed with further analysis and why. Across all five cases, you
-will use the provided hint to identify the one validated, high-quality
-experiment and speculate on the main issue present in the other cases.
-
-**Criteria — How you'll know you're succeeding:** Each recommendation is
-unambiguous (proceed / do not proceed) and traceable to the specific
-statistics you cited earlier in that case's write-up. You can suggest at
-least one follow-up analysis or experiment that would potentially confirm
-your hypothesis as to the cause of the underlying issues seen in the other
-cases.
-
-## Task
-
-### Part 1: Discussion (~30 minutes)
+### Part 1: Task
 
 Please make small groups of 3-4 with your peers around you and discuss the
 following question:
@@ -96,7 +40,63 @@ experiment, rank the following from most concerning to least concerning:
 7. Nucleotide frequencies of A, C, G, T are not equal over the entire read
 8. Unequal number of forward and reverse reads
 
-### Part 2: Evaluate five distinct experimental cases (remaining time)
+## Part 2: Evaluate five distinct experimental cases (remaining time)
+
+### Objective 1: Apply knowledge of expected technical artifacts
+
+**Purpose — Why this matters:** Many "abnormal-looking" QC signals are
+well-documented, expected artifacts of standard mRNA-seq library prep rather
+than genuine problems. Many FastQC modules will show a "fail" for successful
+experiments. Common sequencing issues also have distinct signatures that show
+up in these statistics. Telling the two apart avoids wasting effort
+re-sequencing data that's actually fine, or wasting effort analyzing data that
+cannot be rescued.
+
+**Task — What you will do:** You will decide, case by case, which flagged
+metrics are expected artifacts and which are genuine causes for concern.
+
+**Criteria — How you'll know you're succeeding:** Your Part 1 ranking and Part
+2 case write-ups justify each artifact-vs-concern classification with a
+specific technical reason (e.g., citing library-prep chemistry or aspects of
+the biology that might explain what you observe).
+
+### Objective 2: Analyze and evaluate a full QC report
+
+**Purpose — Why this matters:** Real sequencing QC reports rarely have one
+metric that tells the whole story and there are expected biases due to the
+underlying sequencing methodology. Drawing a sound overall conclusion requires
+weighing several statistics together as well as considering all of the
+different steps in most workflows (sequencing quality control, alignment
+rates, etc.).
+
+**Task — What you will do:** For each of the five cases, you will
+synthesize at least 2-3 cited statistics into a short paragraph judging the
+experiment's success.
+
+**Criteria — How you'll know you're succeeding:** Your paragraph for each case
+draws a conclusion that follows from the *combination* of cited statistics
+and steps, not from any single metric in isolation.
+
+### Objective 3: Justify a decision to proceed or not proceed with the analysis
+
+**Purpose — Why this matters:** Deciding whether to trust a dataset enough to
+commit further analysis time to it is a routine judgment call for any
+bioinformatics analyst and one that must be defensible and remain the
+responsibility of the individual scientist.
+
+**Task — What you will do:** For each case, you will state whether
+you would proceed with further analysis and why. Across all five cases, you
+will use the provided hint to identify the one validated, high-quality
+experiment and speculate on the main issue present in the other cases.
+
+**Criteria — How you'll know you're succeeding:** Each recommendation is
+unambiguous (proceed / do not proceed) and traceable to the specific
+statistics you cited earlier in that case's write-up. You can suggest at
+least one follow-up analysis or experiment that would potentially confirm
+your hypothesis as to the cause of the underlying issues seen in the other
+cases.
+
+### Part 2: Task
 
 In real sequencing experiments, artifacts or issues often arise from
 experimental protocols or methodological choices. Before you can be confident
