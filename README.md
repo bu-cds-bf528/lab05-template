@@ -123,6 +123,9 @@ follow-up step (an additional check, re-analysis, or wet-lab test) that would
 confirm that hypothesis. Your singular hint is that one of the cases is a
 validated, high-quality experiment.
 
+The `all_multiqc_report.html' summarizes and compares the same modules and
+stats across all the cases. 
+
 Use [`worksheet_template.md`](worksheet_template.md) to record your group's
 answers for both Part 1 and Part 2.
 
