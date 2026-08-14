@@ -68,8 +68,8 @@ statistics on read distribution from RSeQC for six different experiments
 subdirectories with the raw tool output, plus a combined `multiqc_report.html`
 summarizing all three.
 
-The `all_multiqc_report.html' summarizes and compares the same modules and
-stats across all the cases. 
+The `all_multiqc_report.html` summarizes and compares the same modules and
+stats across all the cases.
 
 **Guiding Questions:**
 
@@ -98,33 +98,36 @@ stats across all the cases.
 - In general, all of these cases are known potential situations where
   issues occurred either during sample preparation in the lab, quality
   control of the reads, or alignment to the reference.
-- Once you have guessed at what you think was the high-quality sample
-  aligned to the appropriate reference, compare its specific statistics
-  and metrics to the other samples.
+- Try to match each case to one of the six situations described below,
+  then compare its specific statistics and metrics to the other cases to
+  confirm the match.
 
 **Assumptions:**
 
 - The data is derived from a real mRNA-seq experiment with poly-A selected,
   100bp paired-end reads.
-- The problems represent common issues that arise in sequencing experiments
-  due to experimental protocol, library preparation, etc.
-- A problem may be a feature of the underlying reads or an issue introduced
-  anywhere in the initial workflow (the sequencing reads themselves,
-  generation of the genome index, or alignment to the reference genome).
 - One case represents an experiment with high-quality reads and successful
   alignment to the reference genome.
 
 In your same groups, for each case, please comment on the output of each
-report by specifically citing at least 2-3 statistics / metrics, and a short
-paragraph explaining what this means about the success of the underlying
-experiment. Then, make a recommendation about what you believe is right or
-wrong with the experiment, and whether you will proceed with further analysis
-and why. If you believe something is wrong with a case, speculate on the most
-likely root cause behind the pattern of statistics you observed (e.g., a
-specific library-prep, sequencing, or biological explanation) and suggest a
-follow-up step (an additional check, re-analysis, or wet-lab test) that would
-confirm that hypothesis. Your singular hint is that one of the cases is a
-validated, high-quality experiment.
+report by specifically citing at least 2-3 statistics / metrics per output
+(FastQC, STAR, RSeQC), and a short paragraph explaining what this means
+about the success of the underlying experiment. When you have completed this,
+please try to match every case with the situation that generated it, listed
+below. List at least one follow-up analysis you would do to confirm that
+this is the stated situation. Finally, make a recommendation about whether
+you will proceed with further analysis and why. Note that this should include
+how you would *theoretically* mitigate the problem if one exists or if you even
+need to.
+
+**Situations:**
+
+1. Validated human mRNAseq reads with adapter contamination aligned to the human genome
+2. Validated human mRNAseq reads with incomplete gDNA contamination aligned to the human genome
+3. Validated human mRNAseq reads with bacterial (Pseudomonas Aeruginosa) contamination aligned to the human genome
+4. Validated human mRNAseq reads with human rRNA contamination aligned to the human genome
+5. Validated human mRNAseq reads aligned to the mouse genome
+6. Validated human mRNAseq reads aligned to the human genome
 
 Use [`worksheet_template.md`](worksheet_template.md) to record your group's
 answers for both Part 1 and Part 2.
@@ -175,15 +178,14 @@ answers for both Part 1 and Part 2.
 >
 > **Task — What you will do:** For each case, you will state whether you
 > would proceed with further analysis and why. Across all six cases, you
-> will use the provided hint to identify the one validated, high-quality
-> experiment and speculate on the main issue present in the other cases.
+> will match each one to its situation from the given list and identify
+> which case corresponds to the fully validated, high-quality experiment.
 >
 > **Criteria — How you'll know you're succeeding:** Each recommendation is
 > unambiguous (proceed / do not proceed) and traceable to the specific
 > statistics you cited earlier in that case's write-up. You can suggest at
-> least one follow-up analysis or experiment that would potentially confirm
-> your hypothesis as to the cause of the underlying issues seen in the
-> other cases.
+> least one follow-up analysis or experiment that would confirm your
+> matched situation for each case.
 
 ## AI Use Policy
 

@@ -26,13 +26,34 @@ Rank the 8 items below from **most concerning (1)** to **least concerning (8)** 
 
 ---
 
-## Part 2: Evaluate Six Distinct Experimental Cases
+## Part 2: Match Six Cases to Six Situations
 
-For each case, cite **at least 2-3 specific statistics/metrics** (name the metric and its value), write a short paragraph interpreting what they mean about the experiment, and state a clear recommendation. If you believe something is wrong with a case, speculate on the specific root cause and suggest a follow-up that would confirm it.
+For each case, cite **at least 2-3 specific statistics/metrics per output** (FastQC, STAR, RSeQC), write a short paragraph interpreting what they mean about the experiment, and match the case to one of the six situations below. List at least one follow-up analysis that would confirm the match, make a recommendation about whether you would proceed with further analysis, and note how you would theoretically mitigate the problem (if one exists, or explain why none is needed).
+
+**Situations:**
+
+1. Validated human mRNAseq reads with adapter contamination aligned to the human genome
+2. Validated human mRNAseq reads with incomplete gDNA contamination aligned to the human genome
+3. Validated human mRNAseq reads with bacterial (Pseudomonas Aeruginosa) contamination aligned to the human genome
+4. Validated human mRNAseq reads with human rRNA contamination aligned to the human genome
+5. Validated human mRNAseq reads aligned to the mouse genome
+6. Validated human mRNAseq reads aligned to the human genome
 
 ### Case A
 
-**Statistics cited:**
+**FastQC statistics cited:**
+
+1.
+2.
+3.
+
+**STAR statistics cited:**
+
+1.
+2.
+3.
+
+**RSeQC statistics cited:**
 
 1.
 2.
@@ -43,17 +64,24 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 
 
+**Matched situation (1-6):** ___________
+
+**Rationale for match:**
+
+
+
+
+**Suggested follow-up to confirm this is the stated situation:**
+
+
+
+
 **Recommendation** (proceed / do not proceed with further analysis) **and why:**
 
 
 
 
-**Suspected root cause** (if something is wrong with this case, what specific library-prep, sequencing, or biological explanation do you think is causing it?):
-
-
-
-
-**Suggested follow-up to confirm the root cause** (what additional check, re-analysis, or wet-lab step would confirm that specific hypothesis?):
+**Theoretical mitigation** (how would you address this problem if one exists, or explain why none is needed):
 
 
 
@@ -62,7 +90,19 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 ### Case B
 
-**Statistics cited:**
+**FastQC statistics cited:**
+
+1.
+2.
+3.
+
+**STAR statistics cited:**
+
+1.
+2.
+3.
+
+**RSeQC statistics cited:**
 
 1.
 2.
@@ -73,17 +113,24 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 
 
+**Matched situation (1-6):** ___________
+
+**Rationale for match:**
+
+
+
+
+**Suggested follow-up to confirm this is the stated situation:**
+
+
+
+
 **Recommendation** (proceed / do not proceed with further analysis) **and why:**
 
 
 
 
-**Suspected root cause** (if something is wrong with this case, what specific library-prep, sequencing, or biological explanation do you think is causing it?):
-
-
-
-
-**Suggested follow-up to confirm the root cause** (what additional check, re-analysis, or wet-lab step would confirm that specific hypothesis?):
+**Theoretical mitigation** (how would you address this problem if one exists, or explain why none is needed):
 
 
 
@@ -92,7 +139,19 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 ### Case C
 
-**Statistics cited:**
+**FastQC statistics cited:**
+
+1.
+2.
+3.
+
+**STAR statistics cited:**
+
+1.
+2.
+3.
+
+**RSeQC statistics cited:**
 
 1.
 2.
@@ -103,17 +162,24 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 
 
+**Matched situation (1-6):** ___________
+
+**Rationale for match:**
+
+
+
+
+**Suggested follow-up to confirm this is the stated situation:**
+
+
+
+
 **Recommendation** (proceed / do not proceed with further analysis) **and why:**
 
 
 
 
-**Suspected root cause** (if something is wrong with this case, what specific library-prep, sequencing, or biological explanation do you think is causing it?):
-
-
-
-
-**Suggested follow-up to confirm the root cause** (what additional check, re-analysis, or wet-lab step would confirm that specific hypothesis?):
+**Theoretical mitigation** (how would you address this problem if one exists, or explain why none is needed):
 
 
 
@@ -122,7 +188,19 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 ### Case D
 
-**Statistics cited:**
+**FastQC statistics cited:**
+
+1.
+2.
+3.
+
+**STAR statistics cited:**
+
+1.
+2.
+3.
+
+**RSeQC statistics cited:**
 
 1.
 2.
@@ -133,17 +211,24 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 
 
+**Matched situation (1-6):** ___________
+
+**Rationale for match:**
+
+
+
+
+**Suggested follow-up to confirm this is the stated situation:**
+
+
+
+
 **Recommendation** (proceed / do not proceed with further analysis) **and why:**
 
 
 
 
-**Suspected root cause** (if something is wrong with this case, what specific library-prep, sequencing, or biological explanation do you think is causing it?):
-
-
-
-
-**Suggested follow-up to confirm the root cause** (what additional check, re-analysis, or wet-lab step would confirm that specific hypothesis?):
+**Theoretical mitigation** (how would you address this problem if one exists, or explain why none is needed):
 
 
 
@@ -152,7 +237,19 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 ### Case E
 
-**Statistics cited:**
+**FastQC statistics cited:**
+
+1.
+2.
+3.
+
+**STAR statistics cited:**
+
+1.
+2.
+3.
+
+**RSeQC statistics cited:**
 
 1.
 2.
@@ -163,27 +260,45 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 
 
+**Matched situation (1-6):** ___________
+
+**Rationale for match:**
+
+
+
+
+**Suggested follow-up to confirm this is the stated situation:**
+
+
+
+
 **Recommendation** (proceed / do not proceed with further analysis) **and why:**
 
 
 
 
-**Suspected root cause** (if something is wrong with this case, what specific library-prep, sequencing, or biological explanation do you think is causing it?):
-
-
-
-
-**Suggested follow-up to confirm the root cause** (what additional check, re-analysis, or wet-lab step would confirm that specific hypothesis?):
+**Theoretical mitigation** (how would you address this problem if one exists, or explain why none is needed):
 
 
 
 
 ---
 
-
 ### Case F
 
-**Statistics cited:**
+**FastQC statistics cited:**
+
+1.
+2.
+3.
+
+**STAR statistics cited:**
+
+1.
+2.
+3.
+
+**RSeQC statistics cited:**
 
 1.
 2.
@@ -194,17 +309,25 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 
 
+**Matched situation (1-6):** ___________
+
+**Rationale for match:**
+
+
+
+
+**Suggested follow-up to confirm this is the stated situation:**
+
+
+
+
 **Recommendation** (proceed / do not proceed with further analysis) **and why:**
 
 
 
 
-**Suspected root cause** (if something is wrong with this case, what specific library-prep, sequencing, or biological explanation do you think is causing it?):
+**Theoretical mitigation** (how would you address this problem if one exists, or explain why none is needed):
 
-
-
-
-**Suggested follow-up to confirm the root cause** (what additional check, re-analysis, or wet-lab step would confirm that specific hypothesis?):
 
 
 
@@ -212,9 +335,19 @@ For each case, cite **at least 2-3 specific statistics/metrics** (name the metri
 
 ## Summary
 
-**Which case do you believe is the validated, high-quality experiment?** ___________
+Complete the matching below — each situation should be used exactly once.
+
+| Case | Matched Situation (1-6) |
+|------|--------------------------|
+| A    |                          |
+| B    |                          |
+| C    |                          |
+| D    |                          |
+| E    |                          |
+| F    |                          |
+
+**Which case matches Situation 6 (reads aligned to the human genome with no contamination or reference mismatch)?** ___________
 
 **Why, compared to the other five cases?**
-
 
 
