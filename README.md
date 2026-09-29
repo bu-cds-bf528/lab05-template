@@ -51,6 +51,24 @@ summarizing all three.
 The `all_multiqc_report.html` summarizes and compares the same modules and
 stats across all the cases.
 
+### wgs_reference
+
+I included the same QC info for actual whole genome sequencing data aligned
+using the same pipeline. Please note that you would almost certainly not
+want to use STAR to align WGS data since STAR is **expecting** reads to be
+spliced and we do not have that expectation with WGS data. In a real WGS experiment,
+you would simply align your reads with a general-purpose sequence aligner (bowtie2, bwa, etc.)
+
+This example is included so you can get a sense for what characteristics shift based on
+what population of sequences you are assaying. STAR was used intentionally just
+to illustrate the differences in QC metrics between RNA-seq and WGS data.
+
+You can see that as we expected, there are zero annotated splice events. You'll also
+notice that there is a generally high overall alignment rate, but the
+distribution of features is far more weighted towards intronic regions. Take note also
+of the GC content distribution as well as the sequence duplication levels and how they
+are different from the mRNAseq experiments. 
+
 **Guiding Questions:**
 
 #### FastQC
@@ -104,9 +122,9 @@ need to.
 
 1. Validated human mRNAseq reads with adapter contamination aligned to the human genome
 2. Validated human mRNAseq reads with incomplete gDNA contamination aligned to the human genome
-3. Validated human mRNAseq reads with bacterial (Pseudomonas Aeruginosa) contamination aligned to the human genome
+3. Validated human mRNAseq reads aligned to the mouse genome
 4. Validated human mRNAseq reads with human rRNA contamination aligned to the human genome
-5. Validated human mRNAseq reads aligned to the mouse genome
+5. Validated human mRNAseq reads with bacterial (Pseudomonas Aeruginosa) contamination aligned to the human genome
 6. Validated human mRNAseq reads aligned to the human genome
 
 Use [`worksheet_template.md`](worksheet_template.md) to record your group's
