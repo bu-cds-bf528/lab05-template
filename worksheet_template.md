@@ -33,7 +33,7 @@ For each case, cite **at least 2-3 specific statistics/metrics per output** (Fas
 **Situations:**
 
 1. Validated human mRNAseq reads with adapter contamination aligned to the human genome
-2. Validated human mRNAseq reads with incomplete gDNA contamination aligned to the human genome
+2. Validated human mRNAseq reads with incomplete gDNA depletion aligned to the human genome
 3. Validated human mRNAseq reads with bacterial (Pseudomonas Aeruginosa) contamination aligned to the human genome
 4. Validated human mRNAseq reads with human rRNA contamination aligned to the human genome
 5. Validated human mRNAseq reads aligned to the mouse genome
