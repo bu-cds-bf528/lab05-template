@@ -61,7 +61,12 @@ you would simply align your reads with a general-purpose sequence aligner (bowti
 
 This example is included so you can get a sense for what characteristics shift based on
 what population of sequences you are assaying. STAR was used intentionally just
-to illustrate the differences in QC metrics between RNA-seq and WGS data.
+to illustrate the differences in QC metrics between RNA-seq and WGS data. You can 
+view this as an extreme example of the situation where reads generated from gDNA were
+processed in a RNAseq pipeline using a splice-aware aligner with the only difference being
+that in this case, every single read originated from a WGS experiment. It's also a reminder to use
+the appropriate tools for the experiment: a splice-aware alignment tool for RNAseq and a
+general alignment algorithm for WGS. 
 
 You can see that as we expected, there are zero annotated splice events. You'll also
 notice that there is a generally high overall alignment rate, but the
