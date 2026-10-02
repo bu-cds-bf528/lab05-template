@@ -111,16 +111,22 @@ are different from the mRNAseq experiments.
   100bp paired-end reads.
 - One case represents an experiment with high-quality reads and successful
   alignment to the reference genome.
+- All of the spiked-in sequences originate from real experiments or references
 
 In your same groups, for each case, please comment on the output of each
 report by specifically citing at least 2-3 statistics / metrics per output
 (FastQC, STAR, RSeQC), and a short paragraph explaining what this means
-about the success of the underlying experiment. When you have completed this,
-please try to match every case with the situation that generated it, listed
-below. List at least one follow-up analysis you would do to confirm that
-this is the stated situation. Finally, make a recommendation about whether
-you will proceed with further analysis and why. Note that this should include
-how you would *theoretically* mitigate the problem if one exists or if you even
+about the success of the underlying experiment. You should at minimum include
+mention of the metrics that you believe indicate the presence of an artifact.
+You can also comment on other metrics that you think indicate the success of
+the experiment.
+
+
+When you have completed this, please try to match every case with the situation
+that generated it, listed below. List at least one follow-up analysis you would
+do to confirm that this is the stated situation. Finally, make a recommendation
+about whether you will proceed with further analysis and why. Note that this should
+include how you would *theoretically* mitigate the problem if one exists or if you even
 need to.
 
 **Situations:**
